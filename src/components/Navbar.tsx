@@ -17,15 +17,15 @@ export default function Navbar() {
             <NavbarCollapse>
                 <NavbarLink href="/home">Начало</NavbarLink>
                 <NavbarLink>
-            <MegaMenuDropdown toggle={<>Села</>}>
-              <ul className="space-y-4 p-4">
+            <MegaMenuDropdown toggle={<>Села</>} suppressHydrationWarning>
+              <ul className="space-y-4 p-4" suppressHydrationWarning>
                   <li>
-                    <a href="#" className="hover:text-primary-600 dark:hover:text-primary-500">
+                    <a href="/villages/chuprene" className="hover:text-primary-600 dark:hover:text-primary-500">
                     Чупрене
                     </a>
                   </li>
                   <li>
-                    <a href="#" className="hover:text-primary-600 dark:hover:text-primary-500">
+                    <a href="/villages/targoviste" className="hover:text-primary-600 dark:hover:text-primary-500">
                     Търговище
                     </a>
                   </li>
